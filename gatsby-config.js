@@ -3,7 +3,8 @@ module.exports = {
     title: `Marcos Renê Dev`,
     position: `Desenvolvedor Frontend`,
     description: `O blog tem como objetivo repassar para a comunidade, um pouco do meu conhecimento.`,
-    author: `Marcos Renê`
+    author: `Marcos Renê`,
+    siteUrl: `https://marcosrenedev.netlify.app`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
