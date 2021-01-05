@@ -10,6 +10,10 @@ export const PostHeader = styled.header`
     padding: ${c.spaces.md} 1rem 0;
     margin: 0;
   }
+
+  @media (min-width: 1024px) {
+    margin: 0;
+  }
 `;
 
 export const PostTitle = styled.h1`
