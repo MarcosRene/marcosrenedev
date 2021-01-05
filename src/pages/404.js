@@ -80,7 +80,7 @@ const NotFoundPage = () => (
       <h1>404</h1>
       <h3>Page not found</h3>
     </Content>
-    <Button to="/page">Voltar para a home</Button>
+    <Button to="/">Voltar para a home</Button>
   </Container>
 );
 
