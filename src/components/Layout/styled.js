@@ -23,7 +23,7 @@ export const Main = styled.main`
   }
 
   .arrowBack {
-    margin-left: ${c.spaces.lg};
+    margin-left: 1.8rem;
     display: flex;
     align-items: center;
     color: ${c.colors.whitePrimary};
@@ -48,12 +48,12 @@ export const Main = styled.main`
     }
   }
 
-  @media (min-width: 768px) and (max-width: 992px){
+  @media (min-width: 768px) and (max-width: 992px) {
     width: 100%;
     padding: 0;
   }
 
-  @media (min-width: 992px) and (max-width: 1400px){
+  @media (min-width: 992px) and (max-width: 1400px) {
     width: 80%;
   }
 `;
