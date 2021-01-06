@@ -1,28 +1,47 @@
 ---
-title: Mussum Ipsum o melhor ipsum do mundis
-description: 'Mussum Ipsum, cacilds vidis litro abertis. Não sou faixa preta cumpadi'
-date: '2019-08-22 08:51:23'
-tag: reactjs
+title: Iniciando um projeto Reactjs com create-react-app
+description: React é uma Biblioteca JavaScritp criada pelo Facebook, para
+  criação de interfaces de usuário. É utilizado para criação de SPA, cujo termo
+  se refere a Single-Page Applications, onde o frontend é responsável por
+  controlar rotas, consumir os dados e exibi-las ao usuário, ou seja, é
+  totalmente desacoplado do backend.
+date: 2021-01-05 09:27:17
+thumbnail: assets/images/react.png
+tag: react
 ---
+## Iniciando o projeto
 
-## Mussum Ipsum o melhor ipsum do mundis
+Para iniciar um projeto com reactjs é necessário ter o Node >= 8.10 e o gerenciador de pacotes NPM >= 5.6 instalado em sua máquina, então a partir daí é simples.
+A forma que podemos iniciar o projeto é rodando o seguinte comando:
 
-Mussum Ipsum, cacilds vidis litro abertis. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Paisis, filhis, espiritis santis. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Copo furadis é disculpa de bebadis, arcu quam euismod magna.
+```bash
+cd www/
+npx create-react-app hello-world
+```
 
-A ordem dos tratores não altera o pão duris. Viva Forevis aptent taciti sociosqu ad litora torquent. Delegadis gente finis, bibendum egestas augue arcu ut est. Atirei o pau no gatis, per gatis num morreus.
+após o comando ser executado, devemos esperar que as dependências sejam instaladas e toda estrutura seja criada.
+Em seguida, assim que a instalação for finalizada damos um “cd” na pasta do nosso projeto
 
-Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Quem num gosta di mé, boa gentis num é.
+```bash
+cd hello-world/
+```
 
-### Nois bebis
+e então podemos executar o seguinte comando:
 
-- Cevadis
-- Lupulis
-- Drinks
+```bash
+npm start
+```
 
-### Uma frasis de impactis
+Caso utilize outro gerenciador de pacotes como o yarn, é simples, basta executar o comando yarn start.
 
-> Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Aenean aliquam molestie leo, vitae iaculis nisl. Cevadis im ampola pa arma uma pindureta. Casamentiss faiz malandris se pirulitá.
+```bash
+yarn start
+```
 
-## E para fecharis
+Pronto, o navegador será executado no [localhost](http://localhost:3000/) e seu projeto estará rodando de forma local.
 
-Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Copo furadis é disculpa de bebadis, arcu quam euismod magna. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.
+![Localhost](/assets/images/localhost.png "Aplicação rodando na porta 3000")
+
+## Conclusão
+
+O create-react-app é uma abstração de tudo que deve ser criando para que o projeto possa rodar. O que quero dizer com abstração ? Falo em termos de configuração, caso eu queria iniciar um projeto do total zero, devo configurar toda minha estrutura (babel, webpack), com reacte-react-app toda configuração já vem feita e isso agiliza o processo de criação da aplicação.
