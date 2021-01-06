@@ -39,6 +39,10 @@ export const AnimationWrapper = styled.div`
     width: 60rem;
     height: 26rem;
 
+    @media (min-width: 320px) {
+      margin: ${c.spaces.ssm};
+    }
+
     path {
       animation: ${fillSvg} 1s ease forwards 2s;
     }

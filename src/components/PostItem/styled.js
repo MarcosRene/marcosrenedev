@@ -36,7 +36,7 @@ export const PostItemContent = styled.div`
   flex-direction: column;
   justify-content: start;
 
-  &:hover {
+
     &::after {
       position: absolute;
       content: '';
@@ -59,7 +59,7 @@ export const PostItemContent = styled.div`
       border-radius: calc(2 * var(--border-width));
       animation: ${moveGradient} 5s alternate infinite;
     }
-  }
+  
   
   > span {
     font-size: ${c.fontSize.xs};
@@ -68,7 +68,7 @@ export const PostItemContent = styled.div`
 
   @media (min-width: 320px) and (max-width: 768px) {
     padding: ${c.spaces.xs};
-    margin: 0 ${c.colors.ssm} ${c.spaces.default};
+    margin: 0 ${c.spaces.ssm} ${c.spaces.default};
   }
 `;
 

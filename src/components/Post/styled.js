@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import * as c from '../../styles/constants';
 
 export const PostHeader = styled.header`
-  max-width: 70rem;
   padding: 5rem 5rem 0;
   margin: auto;
 
@@ -17,19 +16,27 @@ export const PostHeader = styled.header`
 `;
 
 export const PostTitle = styled.h1`
-  margin: 1rem auto;
+  margin: ${c.spaces.sm} auto 0;
   color: ${c.colors.whiteSecondary};
   font-size: ${c.fontSize.lg};
   font-weight: 700;
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    font-size: ${c.spaces.default};
+  }
 `;
 
 export const PostDescription = styled.h2`
+  margin-top: ${c.spaces.xs};
   color: ${c.colors.whiteSecondary};
+  
   font-size: ${c.fontSize.md};
-  font-weight: 200;
+  font-weight: 300;
+  line-height: 1.4;
 
   @media (min-width: 320px) and (max-width: 768px) {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
   }
 `;
 
@@ -44,14 +51,16 @@ export const PostInfors = styled.div`
 export const PostDate = styled.span`
   margin-right: ${c.spaces.default};
   color: ${c.colors.whiteSecondary};
-  font-size: 1.1rem;
+
+  font-size: ${c.spaces.ssm};
   font-weight: 300;
 `;
 
 export const PostToRead = styled.span`
   margin-right: ${c.spaces.default};
   color: ${c.colors.whiteSecondary};
-  font-size: 1.1rem;
+
+  font-size: ${c.spaces.ssm};
   font-weight: 300;
 `;
 
@@ -61,9 +70,10 @@ export const TagWrapper = styled.div`
 
 export const MainContent = styled.section`
   margin: auto;
-  max-width: 70rem;
   padding: 2rem 5rem;
   color: ${c.colors.whiteSecondary};
+
+  text-align: justify;
 
   @media (min-width: 320px) and (max-width: 768px) {
     max-width: 100%;
@@ -81,7 +91,7 @@ export const MainContent = styled.section`
   .tags,
   iframe,
   .button-post {
-    font-size: ${c.fontSize.sm};
+    font-size: 1.1rem;
     font-weight: 300;
     line-height: 1.7;
     letter-spacing: 0.069rem;
@@ -127,7 +137,7 @@ export const MainContent = styled.section`
   }
 
   iframe {
-    padding: 0 1.6rem 1.6rem;
+    padding: 0 ${c.spaces.sm} ${c.spaces.sm};
     width: 100%;
   }
 
