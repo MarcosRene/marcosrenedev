@@ -20,6 +20,7 @@ export const PostTitle = styled.h1`
   color: ${c.colors.whiteSecondary};
   font-size: ${c.fontSize.lg};
   font-weight: 700;
+  line-height: ${c.fontSize.sm};
 
   @media (min-width: 320px) and (max-width: 576px) {
     font-size: ${c.spaces.default};
@@ -29,7 +30,7 @@ export const PostTitle = styled.h1`
 export const PostDescription = styled.h2`
   margin-top: ${c.spaces.xs};
   color: ${c.colors.whiteSecondary};
-  
+
   font-size: ${c.fontSize.md};
   font-weight: 300;
   line-height: 1.4;
