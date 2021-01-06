@@ -33,11 +33,10 @@ export const PostDescription = styled.h2`
 
   font-size: ${c.fontSize.md};
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 1.2;
 
   @media (min-width: 320px) and (max-width: 768px) {
-    font-size: 1.6rem;
-    line-height: 1.4;
+    font-size: ${c.fontSize.default};
   }
 `;
 
