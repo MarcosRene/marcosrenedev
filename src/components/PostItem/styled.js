@@ -97,6 +97,7 @@ export const PostItemTitle = styled.h2`
   margin-bottom: ${c.spaces.xs};
   font-size: ${c.fontSize.md};
   font-weight: 600;
+  line-height: 1;
 
   display: block;
 `;
