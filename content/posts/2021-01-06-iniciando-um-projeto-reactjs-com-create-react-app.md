@@ -2,9 +2,7 @@
 title: Iniciando um projeto Reactjs com create-react-app
 description: React é uma Biblioteca JavaScritp criada pelo Facebook, para
   criação de interfaces de usuário. É utilizado para criação de SPA, cujo termo
-  se refere a Single-Page Applications, onde o frontend é responsável por
-  controlar rotas, consumir os dados e exibi-las ao usuário, ou seja, é
-  totalmente desacoplado do backend.
+  se refere a Single-Page Applications.
 date: 2021-01-05 09:27:17
 thumbnail: assets/images/react.png
 tag: react
