@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import * as c from '../../styles/constants';
 
 export const PostHeader = styled.header`
-  padding: 5rem 5rem 0;
+  padding: 5rem 2rem 0;
   margin: auto;
 
   @media (min-width: 320px) and (max-width: 768px) {
@@ -28,7 +28,7 @@ export const PostTitle = styled.h1`
 `;
 
 export const PostDescription = styled.h2`
-  margin-top: ${c.spaces.xs};
+  margin-top: ${c.spaces.sm};
   color: ${c.colors.whiteSecondary};
 
   font-size: ${c.fontSize.md};
@@ -70,10 +70,8 @@ export const TagWrapper = styled.div`
 
 export const MainContent = styled.section`
   margin: auto;
-  padding: 2rem 5rem;
+  padding: 2rem;
   color: ${c.colors.whiteSecondary};
-
-  text-align: justify;
 
   @media (min-width: 320px) and (max-width: 768px) {
     max-width: 100%;
