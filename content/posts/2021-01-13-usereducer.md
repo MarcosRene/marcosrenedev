@@ -26,89 +26,109 @@ Na figura abaixo o fluxo de funcionamento do useReducer.
 Agora que já conseguimos entender o fluxo, vamos prática. Iniciamos o hook passando um estado inicial e uma função que é responsável por receber nossas ações.
 
 ```jsx
+import React, { useState, useReducer } from 'react';
+
 const initialState = {
-  counter: 2,
-  todos: [{
-    id: 1,
-    text: "One",
-  }, {
-    id: 2,
-    text: "Two",
-  }],
+  todos: [
+    {
+      title: 'Marcos',
+    },
+  ],
 };
 
-const [state, dispatch] = useReducer(reducer, initialState)
+function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  return (<div/>);
+}
+
+export default App();
 ```
 
 Perceba, que existe uma variável state que guardará nossa estado inicial e uma função dispatch que é responsável por disparar nossas ações e atualizar as informações do nosso estado.
 
 ```jsx
+import React, { useState, useReducer } from 'react';
+
 const initialState = {
-  counter: 2,
-  todos: [{
-    id: 1,
-    text: "One",
-  }, {
-    id: 2,
-    text: "Two",
-  }],
+  todos: [
+    {
+      title: 'Marcos',
+    },
+  ],
 };
 
-function reducer = (state, action) => {
+const reducer = (state, action) => {
   switch (action.type) {
-    case "add":
-      {
-        const newCounter = state.counter + 1;
-        const newTodo = {
-          id: newCounter,
-          text: action.text,
-        };
-        return {
-          counter: newCounter,
-          todos: [...state.todos, newTodo],
-        };
-      }
+    case 'add': {
+      return {
+        ...state,
+        todos: [...state.todos, { title: action.title }],
+      };
+    }
+    default:
+      return state;
   }
+};
+
+function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  return (<div/>);
 }
 
-const [state, dispatch] = useReducer(reducer, initialState)
+export default App();
 ```
 
 Acabamos de adicionar nossas actions e observe que o primeiro parametro no useReducer é a função reducer.
 
 ```jsx
+import React, { useState, useReducer } from 'react';
+
 const initialState = {
-  counter: 0,
-  todos: [],
+  todos: [
+    {
+      title: 'Marcos',
+    },
+  ],
 };
 
-function reducer = (state, action) => {
+const reducer = (state, action) => {
   switch (action.type) {
-    case "add":
-      {
-        const newCounter = state.counter + 1;
-        return {
-          counter: newCounter,
-          todos: [...state.todos, newTodo],
-        };
-      }
+    case 'add': {
+      return {
+        ...state,
+        todos: [...state.todos, { title: action.title }],
+      };
+    }
+    default:
+      return state;
   }
+};
+
+function App() {
+  const [title, setTitle] = useState('');
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  const addTodo = () => {
+    dispatch({ type: 'add', title: title });
+  };
+
+  return (
+    <div style={{ displey: 'flex', flexDirection: 'column' }}>
+      <input
+        value={title}
+        type="text"
+        onChange={(e) => setTitle(e.target.value)}
+      />
+      <button onClick={addTodo}>AddTodo</button>
+
+      {state.todos.map(({ title }) => (
+        <span key={title}>{title}</span>
+      ))}
+    </div>
+  );
 }
 
-const [text, setText] = useState("");
-const [state, dispatch] = cd(reducer, initialState)
-
-const addTodo = (newTodo) => {
- dispatch({ type: "add", newTodo });
-}
-return () {
-  <>
-   <input value={text} onChange={e => setText(e.target.value)} />
-   <button onClick={() => addTodo(text)}>AddTodo</button>
-   
-   {state.todos.map(todo => (
-     <span>{todo.text}<span>
-   ))}
-  </>
-}
+export default App;
 ```
