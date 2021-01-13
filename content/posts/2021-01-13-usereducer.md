@@ -13,4 +13,4 @@ Primeiro, que não é tão fácil renderizar estados entre componentes. E segund
 
 ## Introdução
 
-Hoje iremos utilizar o hook [useReducer](https://pt-br.reactjs.org/docs/hooks-reference.html#usereducer), para mais informações bastar clicar no link. O  
+Hoje iremos utilizar o hook [useReducer](https://pt-br.reactjs.org/docs/hooks-reference.html#usereducer), para mais informações bastar clicar no link.
