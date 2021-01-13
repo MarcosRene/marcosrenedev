@@ -23,7 +23,7 @@ Na figura abaixo o fluxo de funcionamento do useReducer.
 
 ## Exemplo
 
-Agora que já conseguimos entender o fluxo, vamos coloca-lo na prática. Vamos iniciar nosso hook, passando um estado inicial e uma função que é responsável por receber nossas ações.
+Agora que já conseguimos entender o fluxo, vamos prática. Iniciamos o hook passando um estado inicial e uma função que é responsável por receber nossas ações.
 
 ```jsx
 const initialState = {
