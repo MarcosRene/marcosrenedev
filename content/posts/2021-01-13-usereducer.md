@@ -20,3 +20,58 @@ Hoje falaremos sobre o hook [useReducer](https://pt-br.reactjs.org/docs/hooks-re
 Na figura abaixo o fluxo de funcionamento do useReducer.
 
 ![Fluxo](/assets/images/fluxo.png "Fluxo de funcionamento do hook useReducer")
+
+## Exemplo
+
+Agora que já conseguimos entender o fluxo, vamos coloca-lo na prática. Vamos iniciar nosso hook, passando um estado inicial e uma função que é responsável por receber nossas ações.
+
+```jsx
+const initialState = {
+  counter: 2,
+  todos: [{
+    id: 1,
+    text: "One",
+  }, {
+    id: 2,
+    text: "Two",
+  }],
+};
+
+const [state, dispatch] = useReducer(reducer, initialState)
+```
+
+Perceba, que existe uma variável state que guardará nossa estado inicial e uma função dispatch que é responsável por disparar nossas ações e atualizar as informações do nosso estado.
+
+```jsx
+const initialState = {
+  counter: 2,
+  todos: [{
+    id: 1,
+    text: "One",
+  }, {
+    id: 2,
+    text: "Two",
+  }],
+};
+
+function reducer = (state, action) => {
+  switch (action.type) {
+    case "add":
+      {
+        const newCounter = state.counter + 1;
+        const newTodo = {
+          id: newCounter,
+          text: action.text,
+        };
+        return {
+          counter: newCounter,
+          todos: [...state.todos, newTodo],
+        };
+      }
+  }
+}
+
+const [state, dispatch] = useReducer(reducer, initialState)
+```
+
+Acabamos de adicionar nossas actions e observe que o primeiro parametro no useReducer é a função reducer.
