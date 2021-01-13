@@ -75,3 +75,40 @@ const [state, dispatch] = useReducer(reducer, initialState)
 ```
 
 Acabamos de adicionar nossas actions e observe que o primeiro parametro no useReducer é a função reducer.
+
+```jsx
+const initialState = {
+  counter: 0,
+  todos: [],
+};
+
+function reducer = (state, action) => {
+  switch (action.type) {
+    case "add":
+      {
+        const newCounter = state.counter + 1;
+        return {
+          counter: newCounter,
+          todos: [...state.todos, newTodo],
+        };
+      }
+  }
+}
+
+const [text, setText] = useState("");
+const [state, dispatch] = cd(reducer, initialState)
+
+const addTodo = (newTodo) => {
+ dispatch({ type: "add", newTodo });
+}
+return () {
+  <>
+   <input value={text} onChange={e => setText(e.target.value)} />
+   <button onClick={() => addTodo(text)}>AddTodo</button>
+   
+   {state.todos.map(todo => (
+     <span>{todo.text}<span>
+   ))}
+  </>
+}
+```
