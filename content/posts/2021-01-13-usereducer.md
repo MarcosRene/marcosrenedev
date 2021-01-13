@@ -9,7 +9,7 @@ tag: react
 ---
 ## Por que utilizar hooks ?
 
-Primeiro, é difícil reutilizar o estado entre os componentes da nossa aplicação. E segundo, de acordo com o caminhar no desenvolvimento de nossas aplicações, alguns componentes vão ficando muito complexos e começam a ficar de menos compreensivos. Além de não possuir quebra de compatibilidade os hooks possuem uma API mais direta sobre conceitos do react(props, state, refs). [Hooks](https://pt-br.reactjs.org/docs/hooks-reference.html) para saber mais.
+Primeiro, é difícil reutilizar o estado entre os componentes da nossa aplicação. E segundo, de acordo com o caminhar no desenvolvimento de nossas aplicações, alguns componentes vão ficando muito complexos e começam a ficar de menos compreensivos. Além de não possuir quebra de compatibilidade os hooks possuem uma API mais direta sobre conceitos do react(props, state, refs). [Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html#motivation) para saber mais.
 
 ## Introdução 
 
