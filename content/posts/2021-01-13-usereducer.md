@@ -112,6 +112,7 @@ function App() {
 
   const addTodo = () => {
     dispatch({ type: 'add', title: title });
+    setTitle('');
   };
 
   return (
