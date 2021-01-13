@@ -116,7 +116,12 @@ function App() {
   };
 
   return (
-    <div style={{ displey: 'flex', flexDirection: 'column' }}>
+    <div
+      style={{
+        displey: 'flex',
+        flexDirection: 'column',
+      }}
+    >
       <input
         value={title}
         type="text"
@@ -125,7 +130,9 @@ function App() {
       <button onClick={addTodo}>AddTodo</button>
 
       {state.todos.map(({ title }) => (
-        <span key={title}>{title}</span>
+        <ul key={title}>
+          <li>{title}</li>
+        </ul>
       ))}
     </div>
   );
