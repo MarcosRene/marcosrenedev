@@ -1,6 +1,6 @@
 ---
 title: "useReducer "
-description: "Há alguns meses atrás o react vem passando por diversas melhorias
+description: "Há algum tempo atrás, o react vem passando por diversas melhorias
   em sua arquitetura, que impactou principalmente no seu gerenciamento de
   estado. "
 date: 2021-01-13 01:37:36
@@ -9,7 +9,7 @@ tag: react
 ---
 ## Por que utilizar hooks ?
 
-Primeiro, é difícil reutilizar o estado entre os componentes da nossa aplicação. E segundo, de acordo com o caminhar no desenvolvimento de nossas aplicações, alguns componentes vão ficando muito complexos e começam a ficar de menos compreensivos. Além de não possuir quebra de compatibilidade os hooks possuem uma API mais direta sobre conceitos do react(props, state, refs). Uso de classe é inexistente com a chegada dos [hooks](https://pt-br.reactjs.org/docs/hooks-intro.html#motivation).
+Primeiro, é difícil reutilizar o estado entre os componentes da nossa aplicação. E segundo, de acordo com o caminhar no desenvolvimento de nossas aplicações, alguns componentes vão ficando muito complexos e começam a ficar menos compreensivos. Além de não possuir quebra de compatibilidade os hooks possuem uma API mais direta sobre conceitos do react(props, state, refs). Uso de classe é inexistente com a chegada dos [hooks](https://pt-br.reactjs.org/docs/hooks-intro.html#motivation).
 
 ## Introdução
 
@@ -23,7 +23,7 @@ Na figura abaixo o fluxo de funcionamento do useReducer.
 
 ## Exemplo
 
-Agora que já conseguimos entender o fluxo, vamos prática. Iniciamos o hook passando um estado inicial e uma função que é responsável por receber nossas ações.
+Agora que já conseguimos entender o fluxo, vamos à prática. Iniciamos o hook passando um estado inicial e uma função que é responsável por receber nossas ações.
 
 ```jsx
 import React, { useState, useReducer } from 'react';
