@@ -3,7 +3,7 @@ title: "useReducer "
 description: "Há algum tempo atrás, o react vem passando por diversas melhorias
   em sua arquitetura, que impactou principalmente no seu gerenciamento de
   estado. "
-date: 2021-02-01 10:47:52
+date: 2021-02-01 10:50:22
 thumbnail: assets/images/react.png
 tag: react
 ---
