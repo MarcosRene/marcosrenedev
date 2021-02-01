@@ -3,7 +3,7 @@ title: "useReducer "
 description: "Há algum tempo atrás, o react vem passando por diversas melhorias
   em sua arquitetura, que impactou principalmente no seu gerenciamento de
   estado. "
-date: 2021-01-13 01:37:36
+date: 2021-02-01 10:47:52
 thumbnail: assets/images/react.png
 tag: react
 ---
@@ -145,4 +145,4 @@ Finalizado, assim fica nosso arquivo App.js. Veja que no nosso button temos um p
 
 ## Conclusão
 
-O useReducer surgiu como uma opção para gerenciamento de estado das aplicações react. Quando comparado ao Redux, se torna bem menos trabalhoso e mais simples de implementar, mas isso não quer dizer que o Redux não seja uma boa opção. Claro, que ambos possuem pós e contras e isso pode ser notado ao longo das aplicações que você for desenvolvendo, qual a sua real necessidade.
+O useReducer surgiu como uma opção para gerenciamento de estado das aplicações react. Quando comparado ao Redux, se torna bem menos trabalhoso e mais simples de implementar, mas isso não quer dizer que o Redux não seja uma boa opção. Claro, ambos possuem pós e contras e isso pode ser notado ao longo das aplicações que você for desenvolvendo, qual a sua real necessidade.
