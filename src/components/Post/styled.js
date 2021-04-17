@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import * as c from '../../styles/constants';
 
 export const PostHeader = styled.header`
@@ -66,6 +67,22 @@ export const PostToRead = styled.span`
 
 export const TagWrapper = styled.div`
   margin: ${c.spaces.sm} 0;
+`;
+
+export const ButtonBack = styled(Link)`
+  margin-left: 1.8rem;
+  display: flex;
+  align-items: center;
+  color: ${c.colors.whitePrimary};
+
+  transition: color ${c.transitions.default};
+  &:hover {
+    color: ${c.colors.blueTerciary};
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    margin-left: ${c.spaces.xs};
+  }
 `;
 
 export const MainContent = styled.section`
