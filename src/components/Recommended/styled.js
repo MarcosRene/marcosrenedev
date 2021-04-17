@@ -4,21 +4,20 @@ import { Link } from 'gatsby';
 import * as c from '../../styles/constants';
 
 export const RecommendedWrapper = styled.div`
-  border-radius: 0.2rem;
   display: flex;
-
-  margin-bottom: 3.125rem;
+  margin-bottom: 1rem;
 `;
 
 export const RecommendedLink = styled(Link)`
-  align-items: center;
+  width: 50%;
   border: 0.063rem solid ${c.colors.whitePrimary};
   border-radius: 0.188rem;
   color: ${c.colors.whitePrimary};
-  display: flex;
-  padding: ${c.spaces.lg};
+  padding: ${c.spaces.sm};
   text-decoration: none;
-  width: 50%;
+
+  display: flex;
+  align-items: center;
 
   transition: background, color, border, ${c.transitions.default};
 
@@ -28,22 +27,20 @@ export const RecommendedLink = styled(Link)`
     border: 0.063rem solid ${c.colors.blueTerciary};
   }
 
-  &.previous {
-    margin-right: 0.313rem;
+  &.previous,
+  &.next {
+    margin: 0 0.5rem;
   }
 
   &.next {
-    margin-left: 0.313rem;
     justify-content: flex-end;
   }
 
   &.previous:before {
     content: '\\2190';
-    margin-right: 0.5rem;
   }
 
   &.next:after {
     content: '\\2192';
-    margin-left: 0.5rem;
   }
 `;
