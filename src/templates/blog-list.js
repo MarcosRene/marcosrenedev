@@ -40,18 +40,14 @@ const BlogList = (props) => {
             />
           )
         )}
-        {postList !== 0 ? (
-          <Panigantion
-            isFirst={isFirst}
-            isLast={isLast}
-            currentPage={currentPage}
-            numPages={numPages}
-            prevPage={prevPage}
-            nextPage={nextPage}
-          />
-        ) : (
-          <div />
-        )}
+        <Panigantion
+          isFirst={isFirst}
+          isLast={isLast}
+          currentPage={currentPage}
+          numPages={numPages}
+          prevPage={prevPage}
+          nextPage={nextPage}
+        />
       </Layout>
     </>
   );

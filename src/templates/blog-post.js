@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
@@ -13,19 +13,14 @@ function BlogPost({ data, pageContext }) {
   const next = pageContext.nextPost;
   const previous = pageContext.previousPost;
 
-  const { currentPage } = pageContext;
-
   return (
     <Layout>
       <SEO title={frontmatter.title} description={frontmatter.description} />
 
-      {currentPage === 1 ? (
-        <div />
-      ) : (
-        <Link className="arrowBack" to="/">
-          Voltar a página 1
-        </Link>
-      )}
+      <S.ButtonBack className="arrowBack" to="/">
+        ← Voltar a listagem
+      </S.ButtonBack>
+
       <S.PostHeader>
         <S.PostInfors>
           <S.PostDate>{frontmatter.date}</S.PostDate>
