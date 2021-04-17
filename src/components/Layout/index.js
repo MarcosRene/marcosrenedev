@@ -5,8 +5,10 @@ import GlobalStyles from '../../styles/global';
 import ScrollIndicator from '../ScrollIndicator';
 import Profile from '../Profile';
 import Footer from '../Footer';
-
 import * as S from './styled';
+
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+deckDeckGoHighlightElement();
 
 const Layout = ({ children }) => {
   return (

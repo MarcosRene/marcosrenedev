@@ -22,30 +22,10 @@ export const Main = styled.main`
     display: flex;
   }
 
-  .arrowBack {
-    margin-left: 1.8rem;
-    display: flex;
-    align-items: center;
-    color: ${c.colors.whitePrimary};
-
-    transition: color ${c.transitions.default};
-    &:hover {
-      color: ${c.colors.blueTerciary};
-    }
-
-    &::before {
-      content: '\\2190';
-    }
-  }
-
   @media (min-width: 320px) and (max-width: 768px) {
     width: 100%;
     margin: 0 auto;
     padding: 0;
-
-    .arrowBack {
-      margin-left: ${c.spaces.xs};
-    }
   }
 
   @media (min-width: 768px) and (max-width: 992px) {
