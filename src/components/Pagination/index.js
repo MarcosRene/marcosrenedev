@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
 
 import * as S from './styled';
 
 const Pagination = ({
-  isFist,
+  isFirst,
   isLast,
   currentPage,
   numPages,
@@ -14,14 +14,14 @@ const Pagination = ({
 }) => {
   return (
     <S.PaginationWrapper>
-      {!isFist && <Link to={prevPage}> ← página anterior </Link>}
+      {!isFirst && <Link to={prevPage}> ← página anterior </Link>}
       <p>
         {currentPage} de {numPages}
       </p>
       {!isLast && <Link to={nextPage}>próxima página →</Link>}
     </S.PaginationWrapper>
   );
-}
+};
 
 Pagination.propTypes = {
   isFirst: PropTypes.bool.isRequired,
